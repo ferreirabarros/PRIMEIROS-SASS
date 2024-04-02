@@ -1,3 +1,8 @@
+@mixin button-style($backgroud, $color){
+  background: $backgroud;
+  color: $color;
+}
+
 .btn{
   width: 200px;
   padding: 10px 0;
@@ -6,23 +11,18 @@
   border-radius: 10px;
   display: block;
   margin: 10px 0;
-}
-  @mixin button-style($backgroud, $color){
-    background: $backgroud;
-    color: $color;
-  }
+
 // @extend no sass serve para herdar informações
-.btn-laranja{
-  @extend .btn;
-  @include button-style($color-orange, #fff );
+// @extend .btn;
+  &.btn-laranja{
+    @include button-style($color-orange, #fff );
+  } 
+  &.btn-roxo{
+    @include button-style($color-roxa, #fff );
+  } 
+  &.btn-amarelo{
+    @include button-style($color-amarelo, #fff );
+  }
 }
 
-.btn-roxo{
-  @extend .btn;
-  @include button-style($color-roxa, #fff );
-}
 
-.btn-amarelo{
-  @extend .btn;
-  @include button-style($color-amarelo, #fff );
-}
