@@ -1,19 +1,4 @@
-.btn{
-  width: 200px;
-  padding: 10px 0;
-  background: none;
-  border: 0;
-  border-radius: 10px;
-
-
-// $ serve para referenciar filhos juntar informações
-  &.btn-laranja{
-    margin: 40px;
-  }
-}
-// @extend no sass serve para herdar informações
-.btn-laranja{
-  @extend .btn;
-}
+@import "./variaveis.scss";
+@import "./button.scss";
 
 
