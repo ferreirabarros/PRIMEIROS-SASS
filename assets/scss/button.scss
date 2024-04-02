@@ -1,6 +1,12 @@
 @mixin button-style($backgroud, $color){
   background: $backgroud;
   color: $color;
+  &:hover{
+    // darken esturece tantos %
+    //desaturate desatura tantos %
+    // mix mistura as cores
+    background: grayscale($backgroud);
+  }
 }
 
 .btn{
